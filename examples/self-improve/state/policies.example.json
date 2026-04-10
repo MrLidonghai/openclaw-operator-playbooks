@@ -1,0 +1,28 @@
+{
+  "promotion": {
+    "lowRisk": {
+      "autoPromote": true,
+      "maxTouchedFiles": 5,
+      "requireValidation": true
+    },
+    "mediumRisk": {
+      "autoPromote": false,
+      "maxTouchedFiles": 3,
+      "requireValidation": true
+    },
+    "highRisk": {
+      "autoPromote": false,
+      "requireValidation": true
+    }
+  },
+  "blockedBehaviours": [
+    "new-network-calls",
+    "new-secret-reads",
+    "permission-expansion",
+    "safety-boundary-change"
+  ],
+  "schedules": {
+    "deepReview": "0 9 * * *",
+    "lightReview": "0 18 * * *"
+  }
+}

@@ -1,0 +1,21 @@
+{
+  "mutable": [
+    "memory/*.md",
+    "MEMORY.md",
+    "IMPROVEMENTS.md",
+    "TOOLS.md",
+    "docs/**/*.md",
+    "skills/self-improve-firebreak/**/*.md",
+    "skills/self-improve-firebreak/**/*.json"
+  ],
+  "blocked": [
+    "**/.env",
+    "**/secrets/**",
+    "**/*token*",
+    "**/*secret*",
+    "**/auth/**",
+    "**/safety/**",
+    "**/payments/**",
+    "**/public-posting/**"
+  ]
+}
